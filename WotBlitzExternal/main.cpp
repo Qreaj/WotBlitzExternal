@@ -14,6 +14,7 @@ int main() {
 		return -1;
 	}
 	cout << "Cheat made by qreaj\n";
+	cout << "https://github.com/Qreaj/WotBlitzExternal\n";
 	cout << "Press F1 to enable/disable esp\n";
 	cout << "Press F2 to enable/disable nospread\n";
 	HANDLE handle = OpenProcess(PROCESS_ALL_ACCESS,0,pid);
