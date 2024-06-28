@@ -33,8 +33,8 @@ int main() {
 	esp = true;
 	nospread = true;
 	while(IsHandleValid(handle)) {
-		if (GetAsyncKeyState(VK_F1) & 1) esp = !esp;
-		if (GetAsyncKeyState(VK_F2) & 1) nospread = !nospread;
+		if (GetAsyncKeyState(VK_F1)) esp = !esp;
+		if (GetAsyncKeyState(VK_F2)) nospread = !nospread;
 
 		if (esp) {
 			// mov eax, 1
@@ -52,7 +52,7 @@ int main() {
 		}
 		
 
-		Sleep(5);
+		Sleep(100);
 	}
 return 0;
 }
